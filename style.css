@@ -52,6 +52,124 @@ nav{
     left: 0;
     width: 0;
     height: 2px;
-    background: #1d4ed8;
-    transition: all 0.3s ease;
+    background: #38598b;
+    transition: all 0.3s;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color:#fff;
+    background-color: #38598b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: #113f67;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #38598b;
+    z-index: -1;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #18181b;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    margin-bottom: 1rem;
+    color: #18181b;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: #e7eaf6;
+    -webkit-text-stroke-width: 1px ;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #18181b;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.project{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+}
+
+.project .card{
+    background-color: #e7eaf6;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.project .card:hover{
+    background-color: #a2a8d3;
+    border-color: #fff;
+}
+
+.project .card span {
+    display: inline-block;
+    background-color: #38598b;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.project .card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project .card p{
+    margin-bottom: 1rem;
+}
+
+.project .card a{
+    color: #38598b;
+    font-weight: 600;
 }
