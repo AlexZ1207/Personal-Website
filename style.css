@@ -131,7 +131,7 @@ section .header{
 .project{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 2rem;
 
 }
@@ -172,4 +172,22 @@ section .header{
 .project .card a{
     color: #38598b;
     font-weight: 600;
+}
+
+.project .card a:hover{
+    text-decoration: underline;
+    color:#fff
+}
+
+
+.skills{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+
+}
+
+.skills .image{
+    width: 100%;
 }
