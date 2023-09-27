@@ -83,7 +83,7 @@ nav{
 .blur{
     position: absolute;
     box-shadow: 0 0 1000px 50px #38598b;
-    z-index: -1;
+    z-index: -100;
 }
 
 header{
@@ -181,13 +181,114 @@ section .header{
 
 
 .skills{
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
-
 }
 
-.skills .image{
-    width: 100%;
+.skills .card{
+    background-color: #e7eaf6;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
+
+.skills .card:hover{
+    background-color: #a2a8d3;
+    border-color: #fff;
+}
+
+
+.skills .card p{
+    margin-bottom: 0.75rem;
+}
+
+.skills span{
+    display: inline-block;
+    background-color: #38598b;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.info {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.info .card {
+    background-color: #e7eaf6;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.info .card:hover{
+    background-color: #a2a8d3;
+    border-color: #fff;
+}
+
+.info .card span {
+    display: inline-block;
+    background-color: #38598b;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.info .card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.info .card p{
+    margin-bottom: 1rem;
+}
+
+.column{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;;
+    }
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .project{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .info{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (width < 600px){
+    .project{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .info{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
